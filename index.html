@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 10 Assignment</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+<body>
+<img src=" https://miro.medium.com/v2/resize:fit:4800/format:webp/1*khB0527e_Q7oOaYdaWjPyg.jpeg
+" class="img-fluid" alt="Responsive image">
+
+  <div class="container mt-3">
+    <h2 class="mb-4 display-1 text-dark text-center text-uppercase">What's in Your Garage?</h2>
+
+    <!-- Bootstrap Form: Make A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit. Must be able to clear form and be added to table after it is submitted.
+ -->
+    <form id="userForm" class="row g-3 mb-4">
+      <div class="col-md-4">
+        <label for="make" class="form-label">Make</label>
+        <input type="text" class="form-control" id="make" placeholder="Enter Make" required>
+      </div>
+      <div class="col-md-4">
+        <label for="model" class="form-label">Model</label>
+        <input type="text" class="form-control" id="model" placeholder="Enter Model" required>
+      </div>
+      <div class="col-md-4">
+        <label for="topSpeed" class="form-label">Top Speed</label>
+        <input type="text" class="form-control" id="topSpeed" placeholder="Enter Speed" required>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-secondary">Add Car</button>
+      </div>
+    </form>
+
+    <!-- Bootstrap Table: Make A Bootstrap styled table> Will use cars for this.-->
+    <table class="table table-striped table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Top Speed</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <tr>
+          <td>Ferrai</td>
+          <td>F80</td>
+          <td>800</td>
+        </tr>
+    
+      </tbody>
+    </table>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>  
+  <script src="script.js"></script>
+
+ 
+</body>
+</html>
